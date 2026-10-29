@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import {
   LayoutDashboard, Users, CalendarCheck, Package, Sparkles,
@@ -89,7 +89,7 @@ function Topbar() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Toaster position="top-right" toastOptions={{ duration: 3500 }} />
       <div className="app-shell">
         <Sidebar />
@@ -108,7 +108,7 @@ export default function App() {
           </main>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
